@@ -1,0 +1,2 @@
+# StringXmlProcessor
+处理Android项目中Xml字符串资源
