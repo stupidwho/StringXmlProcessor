@@ -6,7 +6,7 @@ import csv
 stringFileName = "strings.xml" # 提供string的key
 csvFileName = "translate.csv"  # 翻译文件，需包含key
 fieldKeyName = 'FieldName'     # key列的csv列名
-needFieldNames = [] # 手动指定需要哪些列
+needFieldNames = []
 
 reader = csv.DictReader(open(csvFileName, 'r', encoding='utf-8'))
 translateList = []
@@ -32,6 +32,6 @@ for fieldName in needFieldNames:
     doc.appendChild(root)
     saveFileName = "strings-{name}.xml".format(name = fieldName)
     with open(saveFileName, "x", encoding="utf-8") as saveFile:
-        doc.writexml(saveFile, indent='', addindent='\t', newl='\n', encoding="utf-8")
+        doc.writexml(saveFile, encoding="utf-8")
     print(f'{saveFileName} translate finished!!!')
 print("all finished!!!")
