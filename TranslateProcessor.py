@@ -7,7 +7,7 @@ from pathlib import Path
 
 aimProjectRootDir = "C:\\Users\\YY\\Projects\\ShoplinePOS-android\\"
 csvFileName = "translate.csv"  # 翻译文件，需包含key
-fieldKeyName = 'FieldName'     # key列的csv列名
+fieldKeyName = 'name'     # key列的csv列名
 needFieldNames = ['th-rTH','vi-rVN']
 ignoreModule = ['sample']
 
